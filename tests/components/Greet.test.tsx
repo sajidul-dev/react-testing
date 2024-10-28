@@ -10,7 +10,7 @@ describe("Greet", () => {
     expect(heading).toHaveTextContent(/Hello Sajjid/i);
   });
 
-  it("should render login button when mane is not provided", () => {
+  it("should render login button when name is not provided", () => {
     render(<Greet />);
     screen.debug();
     const button = screen.getByRole("button");
